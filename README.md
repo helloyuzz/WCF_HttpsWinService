@@ -16,7 +16,7 @@ makecert -in "WCF_HttpsWinService"    // Common name
                                       // CurrentUser|LocalMachine.  Default to 'CurrentUser'
          -n "CN=WCF_HttpsWinService,E=yusais_life@qq.com" // Certificate subject X500 name
 ```
-<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="800px" height="600px">
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="600px" height="800px">
 **App.config**
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
