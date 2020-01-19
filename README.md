@@ -16,7 +16,7 @@ makecert -in "WCF_HttpsWinService"    // Common name
                                       // CurrentUser|LocalMachine.  Default to 'CurrentUser'
          -n "CN=WCF_HttpsWinService,E=yusais_life@qq.com" // Certificate subject X500 name
 ```
-
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="600px" height="300px">
 **App.config**
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -72,6 +72,8 @@ installutil.exe WCF_HttpsWinService.exe
 
 net start WCF_HttpsWinService
 ```
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_1.png" width="600px" height="300px">  
+
 
 **IE or Chrome**
 ```url
@@ -79,6 +81,8 @@ http://localhost:10010/WCF_HttpsWinService/service1
 or 
 https://localhost:10443/WCF_HttpsWinService/service1
 ```
+
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_2.png" width="600px" height="300px">  
 
 **See also**  
 [How to: Configure a Port with an SSL Certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)  
