@@ -16,7 +16,7 @@ makecert -in "WCF_HttpsWinService"    // Common name
                                       // CurrentUser|LocalMachine.  Default to 'CurrentUser'
          -n "CN=WCF_HttpsWinService,E=yusais_life@qq.com" // Certificate subject X500 name
 ```
-<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="600px" height="800px">
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="600px">
 **App.config**
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -72,7 +72,7 @@ installutil.exe WCF_HttpsWinService.exe
 
 net start WCF_HttpsWinService
 ```
-<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_1.png" width="800px" height="600px">  
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_1.png" width="800px">  
 
 
 **IE or Chrome**
@@ -82,7 +82,7 @@ or
 https://localhost:10443/WCF_HttpsWinService/service1
 ```
 
-<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_2.png" width="800px" height="600px">  
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_2.png" width="800px">  
 
 **Client demo**  
 
