@@ -64,7 +64,25 @@ makecert -in "WCF_HttpsWinService"    // Common name
 </configuration>
 ```
 
+**VS2017 Command line**
+```shell
+cd D:\GitHub\WCF_HttpsWinService\bin
 
+installutil.exe WCF_HttpsWinService.exe
+
+net start WCF_HttpsWinService
+```
+
+**IE or Chrome**
+```url
+http://localhost:10010/WCF_HttpsWinService/service1
+or 
+https://localhost:10443/WCF_HttpsWinService/service1
+```
+
+**See also**  
+[How to: Configure a Port with an SSL Certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)  
+[netsh](http://www.colorconsole.de/cmd/en/Windows_7/netsh.htm)
 ```shell
 netsh http delete sslcert 0.0.0.0:10443
 ```
