@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c52d66e3-d9fa-4261-996c-659895393782" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost:10443/WCF_HttpsWinService/service1" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="2a0e7038-1d03-480f-a8f2-83c1b968be11" SourceId="1" SourceUrl="https://localhost:10443/WCF_HttpsWinService/service1?wsdl=wsdl0" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a9de1eb4-6bc8-4e61-852b-e4b9ea29492d" SourceId="1" SourceUrl="https://localhost:10443/WCF_HttpsWinService/service1?xsd=xsd2" />
+    <MetadataFile FileName="service11.xsd" MetadataType="Schema" ID="cc6ecbdd-93c7-44cf-a05d-5dffe0d8ea1b" SourceId="1" SourceUrl="https://localhost:10443/WCF_HttpsWinService/service1?xsd=xsd0" />
+    <MetadataFile FileName="service12.xsd" MetadataType="Schema" ID="af62fefe-8233-4eec-9a88-28d08203815d" SourceId="1" SourceUrl="https://localhost:10443/WCF_HttpsWinService/service1?xsd=xsd1" />
+    <MetadataFile FileName="service1.disco" MetadataType="Disco" ID="8002b379-f4ac-41a3-bd62-809e41e59d6b" SourceId="1" SourceUrl="https://localhost:10443/WCF_HttpsWinService/service1?disco" />
+    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="b5bc7f73-aa3d-4fc9-8e7b-3c3b6b6f68d7" SourceId="1" SourceUrl="https://localhost:10443/WCF_HttpsWinService/service1?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
