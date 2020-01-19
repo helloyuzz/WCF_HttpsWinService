@@ -1,0 +1,14 @@
+﻿WCF Windows服务的操作步骤：
+https://docs.microsoft.com/zh-cn/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate
+
+添加证书到端口：
+netsh http add sslcert ipport
+
+配置app.config文件，参考项目配置
+
+installutil.exe WCFSSL_Project.exe [/u]
+
+
+netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}
+netsh http add sslcert ipport=0.0.0.0:10443 certhash=dd76e541748d72dbd3b0b7294a98ab2a7575fddf appid={f826a29a-7f2e-4719-9dfe-735e59f2f552}
+netsh http add sslcert ipport=0.0.0.0:10443 certhash=ba01db987979770b2996ec059ce613839b463d01 appid={f826a29a-7f2e-4719-9dfe-735e59f2f552}
