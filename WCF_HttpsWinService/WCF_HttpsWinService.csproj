@@ -94,7 +94,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cert\WCF_HttpsWinService.pfx">
+    <Content Include="cert_pfx\WCF_HttpsWinService.pfx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
