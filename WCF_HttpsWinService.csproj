@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pic\cert_hash.png" />
+    <Content Include="pic\screenshot_1.png" />
     <Content Include="WCF_HttpsWinService.txt" />
     <Content Include="Service1.svc" />
   </ItemGroup>
