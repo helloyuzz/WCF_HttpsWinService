@@ -84,6 +84,10 @@ https://localhost:10443/WCF_HttpsWinService/service1
 
 <img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_2.png" width="800px" height="600px">  
 
+**Client demo**  
+
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_3.png" width="600px">
+
 **See also**  
 [How to: Configure a Port with an SSL Certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)  
 
