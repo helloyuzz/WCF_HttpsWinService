@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screentshot", "screentshot"
 		screentshot\cert_hash.png = screentshot\cert_hash.png
 		screentshot\screenshot_1.png = screentshot\screenshot_1.png
 		screentshot\screenshot_2.png = screentshot\screenshot_2.png
+		screentshot\screenshot_3.png = screentshot\screenshot_3.png
 	EndProjectSection
 EndProject
 Global

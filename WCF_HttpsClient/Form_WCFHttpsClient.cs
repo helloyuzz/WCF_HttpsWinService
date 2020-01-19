@@ -10,6 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.Text;
 using System.Windows.Forms;
+using WCF_HttpsClient.WCF_HttpWinService;
 
 namespace WCF_HttpsClient {
     public partial class Form_WCFHttpsClient:Form {
@@ -23,25 +24,22 @@ namespace WCF_HttpsClient {
             myBinding.Security.Mode = SecurityMode.Transport;
             myBinding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Certificate;
 
-            // Create the endpoint address. Note that the machine name   
-            // must match the subject or DNS field of the X.509 certificate  
-            // used to authenticate the service.   
+            // Create the endpoint address, used to authenticate the service.   
             var ea = new EndpointAddress("https://localhost:10443/WCF_HttpsWinService/service1?singleWsdl");
 
-            // Create the client. The code for the calculator ,client is not shown here. See the sample applications  
-            // for examples :
-            var cc = new WCF_HttpWinService.Service1Client(myBinding,ea);
+            // Create the client, for examples :
+            Service1Client cc = new Service1Client(myBinding,ea);
             ServicePointManager.ServerCertificateValidationCallback += RemoteCertificateValidate;
 
             // The client must specify a certificate trusted by the server.  
             cc.ClientCredentials.ClientCertificate.SetCertificate(
-                StoreLocation.LocalMachine,
-                StoreName.My,
-                X509FindType.FindBySerialNumber,
-                "e50ac104bd00779e4bbd03e0724056fe");
+                                                                StoreLocation.LocalMachine,
+                                                                StoreName.My,
+                                                                X509FindType.FindBySerialNumber,
+                                                                "e50ac104bd00779e4bbd03e0724056fe");
 
             // Begin using the client.  
-            string result = cc.GetData(100);
+            string result = cc.GetData(new Random(1000).Next());
 
             cc.Close();
 

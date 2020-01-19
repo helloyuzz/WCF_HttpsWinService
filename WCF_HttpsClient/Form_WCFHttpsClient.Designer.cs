@@ -28,11 +28,11 @@
             // 
             // btn_Call
             // 
-            this.btn_Call.Location = new System.Drawing.Point(514, 181);
+            this.btn_Call.Location = new System.Drawing.Point(410, 157);
             this.btn_Call.Name = "btn_Call";
-            this.btn_Call.Size = new System.Drawing.Size(75, 23);
+            this.btn_Call.Size = new System.Drawing.Size(241, 48);
             this.btn_Call.TabIndex = 0;
-            this.btn_Call.Text = "Call";
+            this.btn_Call.Text = "Call WCF_HttpsWinService";
             this.btn_Call.UseVisualStyleBackColor = true;
             this.btn_Call.Click += new System.EventHandler(this.btn_Call_Click);
             // 
