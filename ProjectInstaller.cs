@@ -6,7 +6,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Web;
 
-namespace WCFSSL_Project {
+namespace WCF_HttpsWinService {
     // Provide the ProjectInstaller class which allows 
     // the service to be installed by the Installutil.exe tool
     [RunInstaller(true)]

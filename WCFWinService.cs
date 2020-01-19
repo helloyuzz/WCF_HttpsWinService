@@ -9,7 +9,7 @@ using System.ServiceModel.Description;
 using System.ServiceProcess;
 using System.Web;
 
-namespace WCFSSL_Project {
+namespace WCF_HttpsWinService {
     public class WCFWinService:ServiceBase {
         public ServiceHost serviceHost = null;
         public WCFWinService() {
@@ -25,18 +25,18 @@ namespace WCFSSL_Project {
                 serviceHost.Close();
             }
             try {
-                string fileName = AppDomain.CurrentDomain.BaseDirectory + "\\system_tracelog.txt";
+                string fileName = AppDomain.CurrentDomain.BaseDirectory + "\\System_tracelog.txt";
                 Trace.Listeners.Add(new TextWriterTraceListener(fileName));
                 Trace.AutoFlush = true;
+                Trace.WriteLine("a");
 
                 //string addressHttp = String.Format("http://{0}:10443/WCFWinServiceSamples/",System.Net.Dns.GetHostEntry("").HostName);
                 //Uri a = new Uri(addressHttp);
                 //Uri[] baseAddresses = new Uri[] { a };
-                Trace.WriteLine("a");
 
 
-                //serviceHost = new ServiceHost(typeof(Service1),baseAddresses);
-                serviceHost = new ServiceHost(typeof(Service1));
+                //serviceHost = new ServiceHost(typeof(Service1),baseAddresses); // code run
+                serviceHost = new ServiceHost(typeof(Service1)); // config file
 
 
                 //WSHttpBinding b = new WSHttpBinding();
@@ -49,11 +49,8 @@ namespace WCFSSL_Project {
                 //serviceHost.Credentials.ServiceCertificate.SetCertificate(StoreLocation.LocalMachine,StoreName.My,X509FindType.FindBySerialNumber,"4cf5e9eae99ae59f4d8bfc3896c3fdc9");
                 //Trace.WriteLine("aaa1");
 
-                // Create a ServiceHost for the CalculatorService type and 
-                // provide the base address.
-
-                // Open the ServiceHostBase to create listeners and start 
-                // listening for messages.
+                // Create a ServiceHost for the CalculatorService type and  provide the base address.
+                // Open the ServiceHostBase to create listeners and start  listening for messages.
                 serviceHost.Open();
 
                 //string address = serviceHost.Description.Endpoints[0].ListenUri.AbsoluteUri;

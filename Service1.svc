@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFSSL_Project.Service1" CodeBehind="Service1.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCF_HttpsWinService.Service1" CodeBehind="Service1.svc.cs" %>
