@@ -95,9 +95,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cert_pfx\WCF_HttpsWinService.pfx.txt">
+    <None Include="cert_pfx\WCF_HttpsWinService.pfx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
