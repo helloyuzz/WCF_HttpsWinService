@@ -26,7 +26,7 @@ makecert -in "WCF_HttpsWinService"    // Common name
       <wsHttpBinding>
         <binding name="WCFSSLBinding">
           <security mode="Transport">
-            <transport clientCredentialType="Certificate"></transport>
+            <transport clientCredentialType="Certificate"></transport> <!--important-->
             <message clientCredentialType="None"/>
           </security>
         </binding>
@@ -86,6 +86,3 @@ https://localhost:10443/WCF_HttpsWinService/service1
 [netsh](http://www.colorconsole.de/cmd/en/Windows_7/netsh.htm)
 
 [WcfTestClient.exe](https://docs.microsoft.com/en-us/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)
-```shell
-netsh http delete sslcert 0.0.0.0:10443
-```
