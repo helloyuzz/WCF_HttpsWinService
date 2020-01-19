@@ -82,7 +82,10 @@ https://localhost:10443/WCF_HttpsWinService/service1
 
 **See also**  
 [How to: Configure a Port with an SSL Certificate](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate)  
+
 [netsh](http://www.colorconsole.de/cmd/en/Windows_7/netsh.htm)
+
+[WcfTestClient.exe](https://docs.microsoft.com/en-us/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)
 ```shell
 netsh http delete sslcert 0.0.0.0:10443
 ```
