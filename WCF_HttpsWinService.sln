@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_HttpsWinService", "WCF_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_HttpsClient", "WCF_HttpsClient\WCF_HttpsClient.csproj", "{90BBC1AB-76AD-440C-834E-A3B75A96F6A2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screentshot", "screentshot", "{2A814993-F6E8-4FA5-95B0-A990F5CEA641}"
+	ProjectSection(SolutionItems) = preProject
+		screentshot\cert_hash.png = screentshot\cert_hash.png
+		screentshot\screenshot_1.png = screentshot\screenshot_1.png
+		screentshot\screenshot_2.png = screentshot\screenshot_2.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
