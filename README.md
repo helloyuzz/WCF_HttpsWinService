@@ -16,8 +16,9 @@ makecert -in "WCF_HttpsWinService"    // Common name
                                       // CurrentUser|LocalMachine.  Default to 'CurrentUser'
          -n "CN=WCF_HttpsWinService,E=yusais_life@qq.com" // Certificate subject X500 name
 ```
-<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="600px">
-**App.config**
+<img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/cert_hash.png" width="600px">  
+**App.config**  
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
@@ -64,7 +65,7 @@ makecert -in "WCF_HttpsWinService"    // Common name
 </configuration>
 ```
 
-**VS2017 Command line**
+**VS2017 Command line**  
 ```shell
 cd D:\GitHub\WCF_HttpsWinService\bin
 
