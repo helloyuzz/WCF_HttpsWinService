@@ -76,6 +76,27 @@ net start WCF_HttpsWinService
 <img src="https://github.com/helloyuzz/WCF_HttpsWinService/blob/master/screentshot/screenshot_1.png" width="800px">  
 
 
+### Postman  
+```postman
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tempuri.org/IService1/Ping</a:Action>
+    <a:MessageID>urn:uuid:a54449a2-7c4d-4471-b08f-4cd1206d0e78</a:MessageID>
+    <a:ReplyTo>
+      <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+    </a:ReplyTo>
+    <!--Very important!-->
+    <a:To s:mustUnderstand="1" xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">https://localhost:10443/WCF_HttpsWinService/service1</a:To>
+  </s:Header>
+  <s:Body>
+    <Ping xmlns="http://tempuri.org/">
+      <clientValue>这是客户端提供的内容</clientValue>
+    </Ping>
+  </s:Body>
+</s:Envelope>
+```
+
+
 **IE or Chrome**
 ```url
 http://localhost:10010/WCF_HttpsWinService/service1
